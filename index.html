@@ -27,14 +27,16 @@
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col selection:bg-emerald-500 selection:text-white">
 
   <!-- PLAY STORE HEADER NAV -->
+  <!-- PLAY STORE HEADER NAV -->
   <header class="bg-white border-b border-slate-200 sticky top-0 z-30 px-4 py-3 shadow-sm">
     <div class="max-w-2xl mx-auto flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <a href="#about" class="text-slate-600 hover:text-slate-900 text-lg">
-          <i class="fa-solid fa-arrow-left"></i>
-        </a>
-        <span class="font-bold text-slate-800 text-sm sm:text-base tracking-tight">App Details</span>
-      </div>
+      
+      <!-- BUTANG KEMBALI KE ATAS (SCROLL TO TOP) -->
+      <a href="#" class="flex items-center gap-3 text-slate-600 hover:text-emerald-600 transition group" title="Kembali ke atas laman">
+        <i class="fa-solid fa-arrow-left text-lg group-hover:-translate-x-1 transition-transform"></i>
+        <span class="font-bold text-slate-800 text-sm sm:text-base tracking-tight group-hover:text-emerald-600">App Details</span>
+      </a>
+
       <div class="flex items-center gap-4 text-slate-600">
         <a href="#survey" class="hover:text-emerald-600 text-sm font-semibold flex items-center gap-1">
           <i class="fa-solid fa-clipboard-list text-emerald-600"></i> Kaji Selidik
