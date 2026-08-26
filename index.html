@@ -111,15 +111,38 @@
         </span>
       </div>
 
-      <!-- ARCORE REQUIREMENT NOTICE -->
-      <div class="p-3 bg-emerald-50/60 rounded-xl border border-emerald-200/50 space-y-1 text-xs text-slate-600">
+    
+      <!-- ARCORE REQUIREMENT NOTICE & PERMISSIONS  -->
+      <div class="p-3 bg-emerald-50/60 rounded-xl border border-emerald-200/50 space-y-2 text-xs text-slate-600">
         <div class="flex items-center gap-1.5 font-bold text-slate-800">
           <span>🤖</span>
-          <span>Keperluan Android ARCore</span>
+          <span>Keperluan Peranti &amp; Kebenaran (Permissions)</span>
         </div>
         <p class="text-[11px] leading-relaxed">
           Aplikasi memerlukan sokongan <strong class="text-emerald-800">Google Play Services for AR (ARCore)</strong> &amp; sensor Gyroscope.
         </p>
+
+        <!-- KOTAK PERINGATAN KAMERA & GPS + LANGKAH UNTUK ONKAN -->
+        <div class="bg-emerald-100/70 p-3 rounded-lg border border-emerald-200/80 text-[11px] space-y-2 text-slate-700">
+          <p class="font-bold text-emerald-900 flex items-center gap-1.5">
+            <i class="fa-solid fa-shield-halved text-emerald-700"></i> Sila Benarkan Akses (Allow Permissions):
+          </p>
+          <ul class="list-disc list-inside space-y-0.5 text-slate-600 pl-1">
+            <li><strong>Kamera:</strong> Untuk imbasan AR Misi 1 hingga 6[cite: 1].</li>
+            <li><strong>Lokasi / GPS:</strong> Untuk pengiraan jarak di Misi 4 (Jeti 3 Negara)[cite: 1].</li>
+          </ul>
+
+          <!-- LANGKAH JIKA TERSEKAT / DIBEKOKKAN -->
+          <div class="pt-1.5 border-t border-emerald-200/60 text-[10px] text-slate-600 space-y-1">
+            <p class="font-bold text-slate-800"><i class="fa-solid fa-gear text-emerald-700 mr-1"></i> Jika skrin AR hitam atau jarak GPS tak keluar:</p>
+            <ol class="list-decimal list-inside space-y-0.5 pl-1 text-slate-600">
+              <li>Buka <strong>Tetapan (Settings) HP</strong> &rarr; <strong>Aplikasi (Apps)</strong> &rarr; Pilih <strong>KembARaPiai</strong>.</li>
+              <li>Tekan <strong>Kebenaran (Permissions)</strong> &rarr; On-kan <strong>Kamera</strong> &amp; <strong>Lokasi</strong>.</li>
+              <li>Pastikan ikon <strong>GPS / Lokasi</strong> pada bar tetapan atas telefon anda telah dihidupkan.</li>
+            </ol>
+          </div>
+        </div>
+
         <div class="bg-white p-2 rounded-lg border border-emerald-100 text-[10px] space-y-0.5 mt-1">
           <p class="font-bold text-rose-600"><i class="fa-solid fa-triangle-exclamation mr-1"></i>Peranti mungkin ada isu / tidak disokong:</p>
           <ul class="list-disc list-inside text-slate-500">
@@ -129,7 +152,6 @@
           </ul>
         </div>
       </div>
-    </div>
 
  <!-- HORIZONTAL CAROUSEL: SCREENSHOTS & VIDEO DEMO -->
 <div class="space-y-2">
