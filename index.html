@@ -91,12 +91,9 @@
       </a>
     </div>
 
-    <!-- DEVICE COMPATIBILITY & iOS STATUS SECTION -->
+   <!-- STATUS PERANTI & KEBENARAN (VERSI RINGKAS & KEMAS) -->
     <div class="bg-white rounded-2xl p-4 border border-slate-200/80 space-y-3 shadow-sm">
-      <div class="flex items-center justify-between text-xs font-bold text-slate-700">
-        <span class="flex items-center gap-1.5"><i class="fa-solid fa-mobile-screen-button text-emerald-600"></i> Status Apps &amp; Keperluan Peranti</span>
-      </div>
-
+      
       <!-- STATUS iOS -->
       <div class="flex items-center justify-between p-2.5 bg-slate-50 rounded-xl border border-slate-100">
         <div class="flex items-center gap-2">
@@ -111,47 +108,50 @@
         </span>
       </div>
 
-    
-      <!-- ARCORE REQUIREMENT NOTICE & PERMISSIONS  -->
-      <div class="p-3 bg-emerald-50/60 rounded-xl border border-emerald-200/50 space-y-2 text-xs text-slate-600">
-        <div class="flex items-center gap-1.5 font-bold text-slate-800">
-          <span>🤖</span>
-          <span>Keperluan Peranti &amp; Kebenaran (Permissions)</span>
-        </div>
-        <p class="text-[11px] leading-relaxed">
-          Aplikasi memerlukan sokongan <strong class="text-emerald-800">Google Play Services for AR (ARCore)</strong> &amp; sensor Gyroscope.
+      <!-- RINGKASAN KEPERLUAN UTAMA (PENDEK & JELAS) -->
+      <div class="p-3 bg-emerald-50/60 rounded-xl border border-emerald-200/50 space-y-1.5 text-xs text-slate-700">
+        <p class="font-bold text-slate-800 flex items-center gap-1.5">
+          <span>📱</span> Keperluan Utama Aplikasi:
         </p>
+        <p class="text-[11px] text-slate-600 leading-relaxed">
+          Sila benarkan akses <strong class="text-emerald-800">Kamera</strong> (untuk AR) dan <strong class="text-emerald-800">GPS / Lokasi</strong> (untuk Misi Jeti 3 Negara) semasa membuka aplikasi.
+        </p>
+      </div>
 
-        <!-- KOTAK PERINGATAN KAMERA & GPS + LANGKAH UNTUK ONKAN -->
-        <div class="bg-emerald-100/70 p-3 rounded-lg border border-emerald-200/80 text-[11px] space-y-2 text-slate-700">
-          <p class="font-bold text-emerald-900 flex items-center gap-1.5">
-            <i class="fa-solid fa-shield-halved text-emerald-700"></i> Sila Benarkan Akses (Allow Permissions):
-          </p>
-          <ul class="list-disc list-inside space-y-0.5 text-slate-600 pl-1">
-            <li><strong>Kamera:</strong> Untuk imbasan AR Misi 1 hingga 6[cite: 1].</li>
-            <li><strong>Lokasi / GPS:</strong> Untuk pengiraan jarak di Misi 4 (Jeti 3 Negara)[cite: 1].</li>
-          </ul>
-
-          <!-- LANGKAH JIKA TERSEKAT / DIBEKOKKAN -->
-          <div class="pt-1.5 border-t border-emerald-200/60 text-[10px] text-slate-600 space-y-1">
-            <p class="font-bold text-slate-800"><i class="fa-solid fa-gear text-emerald-700 mr-1"></i> Jika skrin AR hitam atau jarak GPS tak keluar:</p>
-            <ol class="list-decimal list-inside space-y-0.5 pl-1 text-slate-600">
+      <!-- BUTANG LIPATAN (DETAILS) UNTUK BANTUAN TEKNIKAL -->
+      <details class="group bg-slate-50 rounded-xl border border-slate-200/80 overflow-hidden text-xs">
+        <summary class="p-3 font-bold text-slate-700 cursor-pointer flex items-center justify-between hover:bg-slate-100 transition">
+          <span class="flex items-center gap-1.5 text-[11px]">
+            <i class="fa-solid fa-circle-question text-emerald-600"></i> Ada Isu / Skrin Hitam / Peranti Tak Menyokong?
+          </span>
+          <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition-transform"></i>
+        </summary>
+        
+        <div class="p-3 border-t border-slate-200/80 space-y-2.5 bg-white text-[11px]">
+          
+          <!-- PANDUAN TETAPAN PERMISSION -->
+          <div class="space-y-1 text-slate-600">
+            <p class="font-bold text-slate-800"><i class="fa-solid fa-gear text-emerald-600 mr-1"></i> Cara On-kan Kamera &amp; GPS:</p>
+            <ol class="list-decimal list-inside space-y-0.5 text-slate-500 pl-1">
               <li>Buka <strong>Tetapan (Settings) HP</strong> &rarr; <strong>Aplikasi (Apps)</strong> &rarr; Pilih <strong>KembARaPiai</strong>.</li>
-              <li>Tekan <strong>Kebenaran (Permissions)</strong> &rarr; On-kan <strong>Kamera</strong> &amp; <strong>Lokasi</strong>.</li>
-              <li>Pastikan ikon <strong>GPS / Lokasi</strong> pada bar tetapan atas telefon anda telah dihidupkan.</li>
+              <li>Tekan <strong>Kebenaran (Permissions)</strong> &rarr; Benarkan <strong>Kamera</strong> &amp; <strong>Lokasi</strong>.</li>
+              <li>Pastikan ikon <strong>GPS / Lokasi</strong> di bar atas telefon dihidupkan.</li>
             </ol>
           </div>
-        </div>
 
-        <div class="bg-white p-2 rounded-lg border border-emerald-100 text-[10px] space-y-0.5 mt-1">
-          <p class="font-bold text-rose-600"><i class="fa-solid fa-triangle-exclamation mr-1"></i>Peranti mungkin ada isu / tidak disokong:</p>
-          <ul class="list-disc list-inside text-slate-500">
-            <li>Huawei Baharu tanpa Google Services (Mate 30/40, P40, Nova 7).</li>
-            <li>Android Entry-Level (Samsung A01/A02, Redmi 9A/10A/12C).</li>
-            <li>Versi Android di bawah 8.0 (Oreo).</li>
-          </ul>
+          <!-- NOTIS ARCORE & MODEL SOKONGAN -->
+          <div class="p-2 bg-slate-50 rounded-lg border border-slate-100 space-y-1 text-[10px]">
+            <p class="font-bold text-slate-700"><i class="fa-solid fa-mobile-screen mr-1"></i> Syarat Sistem Android:</p>
+            <ul class="list-disc list-inside text-slate-500 space-y-0.5">
+              <li>Memerlukan Android 8.0 (Oreo) ke atas &amp; sokongan Google ARCore.</li>
+              <li>Model entry-level (seperti Samsung A01/A02, Redmi 9A/10A) atau peranti Huawei tanpa Google Services mungkin tidak menyokong fungsi AR.</li>
+            </ul>
+          </div>
+
         </div>
-      </div>
+      </details>
+
+    </div>
 
  <!-- HORIZONTAL CAROUSEL: SCREENSHOTS & VIDEO DEMO -->
 <div class="space-y-2">
