@@ -27,7 +27,6 @@
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col selection:bg-emerald-500 selection:text-white">
 
   <!-- PLAY STORE HEADER NAV -->
-  <!-- PLAY STORE HEADER NAV -->
   <header class="bg-white border-b border-slate-200 sticky top-0 z-30 px-4 py-3 shadow-sm">
     <div class="max-w-2xl mx-auto flex items-center justify-between">
       
@@ -59,7 +58,7 @@
       <!-- TITLE & META -->
       <div class="space-y-1.5 flex-grow">
         <h1 class="text-lg sm:text-xl font-extrabold text-slate-900 leading-snug">
-          KembARaPiai<sup>™</sup>:Kembara Taman Negara Johor Tanjung Piai Bersama Cikong
+          KembARaPiai<sup>™</sup>: Kembara Taman Negara Johor Tanjung Piai Bersama Cikong
         </h1>
         <p class="text-xs sm:text-sm font-bold text-emerald-700 flex items-center gap-1">
           <span>KembARaPiai<sup>™</sup> Team</span>
@@ -67,14 +66,14 @@
         </p>
         <p class="text-[11px] text-slate-500">Pendidikan • Eko-Pelancongan • AR Interaktif</p>
 
-    <!-- META MAKLUMAT BAHARU (MENGGANTIKAN RATING) -->
+        <!-- META MAKLUMAT BAHARU -->
         <div class="flex items-center gap-2.5 pt-1 text-slate-600 text-xs flex-wrap">
           <span class="px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded font-bold text-[10px]">
             <i class="fa-solid fa-vr-cardboard mr-1"></i> 6 Misi AR
           </span>
           <span class="text-slate-300">|</span>
           <span class="text-[11px] text-slate-600 font-semibold">
-            <i class="fa-brands fa-android text-emerald-600 mr-1"></i> Android APK
+            <i class="fa-brands fa-android text-emerald-600 mr-1"></i> Android &amp; iOS
           </span>
           <span class="text-slate-300">|</span>
           <span class="text-[11px] text-slate-500 font-medium">
@@ -84,31 +83,48 @@
       </div>
     </div>
 
-    <!-- INSTALL BUTTON (APK DOWNLOAD) -->
-    <div>
-      <a href="https://drive.google.com/file/d/1XVlNIk1vu1PFL9ZYUh78E4cDwp_d81Wf/view?usp=sharing" target="_blank" class="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white font-bold rounded-xl text-center text-sm shadow-md transition flex items-center justify-center gap-2">
-        <i class="fa-solid fa-download"></i> Install (Muat Turun APK Android)
+    <!-- INSTALL BUTTONS (ANDROID & iOS) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <!-- BUTTON ANDROID -->
+      <a href="https://drive.google.com/file/d/1XVlNIk1vu1PFL9ZYUh78E4cDwp_d81Wf/view?usp=sharing" target="_blank" class="py-3 px-4 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white font-bold rounded-xl text-center text-xs sm:text-sm shadow-md transition flex items-center justify-center gap-2">
+        <i class="fa-brands fa-android text-base"></i> Install (Android .APK)
+      </a>
+
+      <!-- BUTTON iOS TESTFLIGHT -->
+      <a href="https://testflight.apple.com/join/DKSYmqKk" target="_blank" class="py-3 px-4 bg-slate-900 hover:bg-slate-800 active:bg-black text-white font-bold rounded-xl text-center text-xs sm:text-sm shadow-md transition flex items-center justify-center gap-2">
+        <i class="fa-brands fa-apple text-base"></i> Install (iOS TestFlight)
       </a>
     </div>
 
-   <!-- STATUS PERANTI & KEBENARAN (VERSI RINGKAS & KEMAS) -->
+    <!-- STATUS PERANTI & KEBENARAN -->
     <div class="bg-white rounded-2xl p-4 border border-slate-200/80 space-y-3 shadow-sm">
       
-      <!-- STATUS iOS -->
-      <div class="flex items-center justify-between p-2.5 bg-slate-50 rounded-xl border border-slate-100">
-        <div class="flex items-center gap-2">
-          <span class="text-base">🍎</span>
-          <div>
-            <h2 class="font-bold text-slate-800 text-xs">Versi iOS (iPhone / iPad)</h2>
-            <p class="text-[10px] text-slate-500">Dalam proses pembangunan</p>
+      <!-- STATUS & ARAHAN iOS TESTFLIGHT -->
+      <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-2 text-xs text-slate-700">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <div class="flex items-center gap-2">
+            <span class="text-lg">🍎</span>
+            <div>
+              <h2 class="font-bold text-slate-800 text-xs">Versi iOS (iPhone / iPad)</h2>
+              <p class="text-[10px] text-slate-500">Ujian Beta Menerusi Apple TestFlight</p>
+            </div>
           </div>
+          <a href="https://testflight.apple.com/join/DKSYmqKk" target="_blank" class="px-3 py-1.5 bg-slate-900 hover:bg-slate-800 text-white text-[10px] font-bold rounded-lg shadow-sm transition flex items-center gap-1">
+            <i class="fa-brands fa-apple"></i> Sertai TestFlight
+          </a>
         </div>
-        <span class="px-2.5 py-1 bg-amber-100 text-amber-800 text-[10px] font-bold rounded-full border border-amber-200">
-          Akan Datang
-        </span>
+
+        <!-- ARAHAN LANGKAH TESTFLIGHT -->
+        <div class="bg-white p-2.5 rounded-lg border border-slate-200 text-[10px] space-y-1">
+          <p class="font-bold text-slate-800"><i class="fa-solid fa-circle-info text-blue-600 mr-1"></i> Cara Pasang di iPhone / iPad:</p>
+          <ol class="list-decimal list-inside text-slate-600 space-y-0.5 pl-1">
+            <li>Muat turun aplikasi <strong class="text-slate-800">TestFlight</strong> daripada App Store (jika belum ada).</li>
+            <li>Klik pautan / butang <strong class="text-slate-800">Sertai TestFlight</strong> di atas untuk memasang KembARaPiai.</li>
+          </ol>
+        </div>
       </div>
 
-      <!-- RINGKASAN KEPERLUAN UTAMA (PENDEK & JELAS) -->
+      <!-- RINGKASAN KEPERLUAN UTAMA -->
       <div class="p-3 bg-emerald-50/60 rounded-xl border border-emerald-200/50 space-y-1.5 text-xs text-slate-700">
         <p class="font-bold text-slate-800 flex items-center gap-1.5">
           <span>📱</span> Keperluan Utama Aplikasi:
@@ -118,11 +134,11 @@
         </p>
       </div>
 
-      <!-- BUTANG LIPATAN (DETAILS) UNTUK BANTUAN TEKNIKAL -->
+      <!-- BUTANG LIPATAN (DETAILS) UNTUK BANTUAN TEKNIKAL ANDROID -->
       <details class="group bg-slate-50 rounded-xl border border-slate-200/80 overflow-hidden text-xs">
         <summary class="p-3 font-bold text-slate-700 cursor-pointer flex items-center justify-between hover:bg-slate-100 transition">
           <span class="flex items-center gap-1.5 text-[11px]">
-            <i class="fa-solid fa-circle-question text-emerald-600"></i> Ada Isu atau Skrin Hitam ?
+            <i class="fa-solid fa-circle-question text-emerald-600"></i> Ada Isu atau Skrin Hitam (Android)?
           </span>
           <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition-transform"></i>
         </summary>
@@ -153,89 +169,97 @@
 
     </div>
 
- <!-- HORIZONTAL CAROUSEL: SCREENSHOTS & VIDEO DEMO -->
-<div class="space-y-2">
-  <div class="flex items-center justify-between">
-    <h2 class="text-sm font-bold text-slate-800">
-      <span>Pratonton Media &amp; Misi AR</span>
-    </h2>
-    <!-- BUTANG NAVIGASI SKROL (UNTUK DESKTOP & MOUSE) -->
-    <div class="flex items-center gap-1.5">
-      <button onclick="scrollCarousel(-220)" aria-label="Skrol Kiri" class="w-7 h-7 rounded-full bg-slate-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center text-xs transition shadow-sm active:scale-95">
-        <i class="fa-solid fa-chevron-left"></i>
-      </button>
-      <button onclick="scrollCarousel(220)" aria-label="Skrol Kanan" class="w-7 h-7 rounded-full bg-slate-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center text-xs transition shadow-sm active:scale-95">
-        <i class="fa-solid fa-chevron-right"></i>
-      </button>
-    </div>
-  </div>
-  
- <div id="mediaCarousel" class="flex gap-3 overflow-x-auto no-scrollbar py-2 -mx-4 px-4 scroll-smooth cursor-grab">
-   <!-- 1. VIDEO DEMO POPUP 3D (LANDSCAPE - PAPARAN FULL TANPA TERPOTONG) -->
-    <div class="w-72 sm:w-96 shrink-0 bg-slate-900 rounded-2xl overflow-hidden border border-slate-700 shadow-sm flex flex-col justify-between p-1.5">
-      <div class="w-full h-80 flex items-center justify-center bg-black rounded-xl overflow-hidden">
-        <video controls class="w-full h-full object-contain rounded-xl">
-          <source src="videopop.mp4" type="video/mp4">
-          Pelayar anda tidak menyokong paparan video.
-        </video>
+    <!-- HORIZONTAL CAROUSEL: SCREENSHOTS & VIDEO DEMO -->
+    <div class="space-y-2">
+      <div class="flex items-center justify-between">
+        <h2 class="text-sm font-bold text-slate-800">
+          <span>Pratonton Media &amp; Misi AR</span>
+        </h2>
+        <!-- BUTANG NAVIGASI SKROL (UNTUK DESKTOP & MOUSE) -->
+        <div class="flex items-center gap-1.5">
+          <button onclick="scrollCarousel(-220)" aria-label="Skrol Kiri" class="w-7 h-7 rounded-full bg-slate-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center text-xs transition shadow-sm active:scale-95">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button onclick="scrollCarousel(220)" aria-label="Skrol Kanan" class="w-7 h-7 rounded-full bg-slate-200 hover:bg-emerald-600 hover:text-white flex items-center justify-center text-xs transition shadow-sm active:scale-95">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
       </div>
-      <span class="text-[10px] text-slate-300 py-1 font-semibold text-center block">Demo Pokok Pop-Up 3D</span>
-    </div>    <!-- 2. SKRIN INTRO 1: LAMAN UTAMA -->
-    <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
-      <img src="intro1-utama.jpg" alt="Laman Utama" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Skrin+Utama';">
-      <span class="text-[10px] font-bold text-slate-700 text-center py-1">Laman Utama</span>
+      
+      <div id="mediaCarousel" class="flex gap-3 overflow-x-auto no-scrollbar py-2 -mx-4 px-4 scroll-smooth cursor-grab">
+        <!-- 1. VIDEO DEMO POPUP 3D -->
+        <div class="w-72 sm:w-96 shrink-0 bg-slate-900 rounded-2xl overflow-hidden border border-slate-700 shadow-sm flex flex-col justify-between p-1.5">
+          <div class="w-full h-80 flex items-center justify-center bg-black rounded-xl overflow-hidden">
+            <video controls class="w-full h-full object-contain rounded-xl">
+              <source src="videopop.mp4" type="video/mp4">
+              Pelayar anda tidak menyokong paparan video.
+            </video>
+          </div>
+          <span class="text-[10px] text-slate-300 py-1 font-semibold text-center block">Demo Pokok Pop-Up 3D</span>
+        </div>
+
+        <!-- 2. SKRIN INTRO 1: LAMAN UTAMA -->
+        <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
+          <img src="intro1-utama.jpg" alt="Laman Utama" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Skrin+Utama';">
+          <span class="text-[10px] font-bold text-slate-700 text-center py-1">Laman Utama</span>
+        </div>
+
+        <!-- 3. SKRIN INTRO 2: PETA LOKASI -->
+        <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
+          <img src="intro2-lokasi.jpg" alt="Peta Lokasi" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Peta+Lokasi';">
+          <span class="text-[10px] font-bold text-slate-700 text-center py-1">Peta Lokasi</span>
+        </div>
+
+        <!-- 4. SKRIN INTRO 3: PETA 6 MISI -->
+        <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
+          <img src="intro3-peta-misi.jpg" alt="Peta 6 Misi" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Peta+6+Misi';">
+          <span class="text-[10px] font-bold text-slate-700 text-center py-1">Peta 6 Misi</span>
+        </div>
+
+        <!-- 5. PRATONTON MISI 1 -->
+        <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
+          <img src="misi1-bakau-minyak1.jpg" alt="Misi 1" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Misi+1+Bakau+Minyak';">
+          <span class="text-[10px] font-bold text-slate-700 text-center py-1">Misi 1: Bakau Minyak</span>
+        </div>
+
+        <!-- 6. PRATONTON MISI 2 -->
+        <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
+          <img src="misi2-ikan-belacak1.jpeg" alt="Misi 2" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Misi+2+Ikan+Belacak';">
+          <span class="text-[10px] font-bold text-slate-700 text-center py-1">Misi 2: Ikan Belacak</span>
+        </div>
+
+        <!-- 7. PRATONTON MISI 3 -->
+        <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
+          <img src="misi3-burung-hijrah1.jpeg" alt="Misi 3" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Misi+3+Burung+Hijrah';">
+          <span class="text-[10px] font-bold text-slate-700 text-center py-1">Misi 3: Burung Hijrah</span>
+        </div>
+
+        <!-- 8. PRATONTON MISI 4 -->
+        <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
+          <img src="misi4-jeti-3-negara1.jpeg" alt="Misi 4" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Misi+4+Jeti+3+Negara';">
+          <span class="text-[10px] font-bold text-slate-700 text-center py-1">Misi 4: Jeti 3 Negara</span>
+        </div>
+
+        <!-- 9. PRATONTON MISI 5 -->
+        <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
+          <img src="misi5-api-api-putih1.jpg" alt="Misi 5" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Misi+5+Api-Api+Putih';">
+          <span class="text-[10px] font-bold text-slate-700 text-center py-1">Misi 5: Api-Api Putih</span>
+        </div>
+
+        <!-- 10. PRATONTON MISI 6 -->
+        <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
+          <img src="misi6-tugu-glob1.jpg" alt="Misi 6" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Misi+6+Tugu+Glob';">
+          <span class="text-[10px] font-bold text-slate-700 text-center py-1">Misi 6: Tugu Glob</span>
+        </div>
+
+      </div>
     </div>
 
-    <!-- 3. SKRIN INTRO 2: PETA LOKASI -->
-    <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
-      <img src="intro2-lokasi.jpg" alt="Peta Lokasi" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Peta+Lokasi';">
-      <span class="text-[10px] font-bold text-slate-700 text-center py-1">Peta Lokasi</span>
-    </div>
-
-    <!-- 4. SKRIN INTRO 3: PETA 6 MISI -->
-    <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
-      <img src="intro3-peta-misi.jpg" alt="Peta 6 Misi" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Peta+6+Misi';">
-      <span class="text-[10px] font-bold text-slate-700 text-center py-1">Peta 6 Misi</span>
-    </div>
-
-    <!-- 5. PRATONTON MISI 1 -->
-    <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
-      <img src="misi1-bakau-minyak1.jpg" alt="Misi 1" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Misi+1+Bakau+Minyak';">
-      <span class="text-[10px] font-bold text-slate-700 text-center py-1">Misi 1: Bakau Minyak</span>
-    </div>
-
-    <!-- 6. PRATONTON MISI 2 -->
-    <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
-      <img src="misi2-ikan-belacak1.jpeg" alt="Misi 2" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Misi+2+Ikan+Belacak';">
-      <span class="text-[10px] font-bold text-slate-700 text-center py-1">Misi 2: Ikan Belacak</span>
-    </div>
-
-    <!-- 7. PRATONTON MISI 3 -->
-    <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
-      <img src="misi3-burung-hijrah1.jpeg" alt="Misi 3" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Misi+3+Burung+Hijrah';">
-      <span class="text-[10px] font-bold text-slate-700 text-center py-1">Misi 3: Burung Hijrah</span>
-    </div>
-
-    <!-- 8. PRATONTON MISI 4 -->
-    <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
-      <img src="misi4-jeti-3-negara1.jpeg" alt="Misi 4" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Misi+4+Jeti+3+Negara';">
-      <span class="text-[10px] font-bold text-slate-700 text-center py-1">Misi 4: Jeti 3 Negara</span>
-    </div>
-
-    <!-- 9. PRATONTON MISI 5 -->
-    <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
-      <img src="misi5-api-api-putih1.jpg" alt="Misi 5" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Misi+5+Api-Api+Putih';">
-      <span class="text-[10px] font-bold text-slate-700 text-center py-1">Misi 5: Api-Api Putih</span>
-    </div>
-
-    <!-- 10. PRATONTON MISI 6 -->
-    <div class="w-44 sm:w-48 shrink-0 bg-slate-900/5 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col p-1.5">
-      <img src="misi6-tugu-glob1.jpg" alt="Misi 6" class="w-full h-80 object-contain rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Misi+6+Tugu+Glob';">
-      <span class="text-[10px] font-bold text-slate-700 text-center py-1">Misi 6: Tugu Glob</span>
-    </div>
-
-  </div><div class="border-b border-slate-100 pb-3 flex items-center gap-3.5">
-        <!-- GAMBAR CIKONG (BESAR & KEPALA TAK TERPOTONG) -->
+    <!-- ABOUT THIS APP (PENCERITAAN KEMBARA CIKONG - 6 MISI) -->
+    <div id="about" class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm space-y-6">
+      
+      <div class="border-b border-slate-100 pb-3 flex items-center gap-3.5">
+        <!-- GAMBAR CIKONG -->
         <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 rounded-2xl bg-emerald-50 border border-emerald-200/80 p-0.5 shadow-sm flex items-center justify-center overflow-hidden">
           <img src="avatar-cikong2.png" alt="Avatar Cikong" class="w-full h-full object-cover object-top rounded-xl" onerror="this.onerror=null; this.src='https://via.placeholder.com/80?text=Cikong';">
         </div>
@@ -249,13 +273,13 @@
           </p>
         </div>
       </div>
-      </div>      <!-- KISAH & RAJAH 6 MISI CIKONG -->
+
+      <!-- KISAH & RAJAH 6 MISI CIKONG -->
       <div class="space-y-6">
         
-    <!-- MISI 1 -->
+        <!-- MISI 1 -->
         <div class="space-y-2.5 bg-slate-50 p-4 rounded-xl border border-slate-100">
           <div class="flex items-center gap-2.5">
-            <!-- IKON DIBESARKAN -->
             <img src="icon-poi-bakau-minyak.png" alt="Icon Misi 1" class="w-10 h-10 sm:w-12 sm:h-12 object-contain rounded-xl bg-emerald-100 p-1 shrink-0 shadow-sm" onerror="this.onerror=null; this.src='https://via.placeholder.com/48?text=M1';">
             <h3 class="text-sm sm:text-base font-bold text-slate-800">Misi 1: Bakau Minyak &amp; Pop-Up 3D</h3>
           </div>
@@ -263,13 +287,12 @@
             <strong class="text-emerald-700">Cikong:</strong> "Sebab apa dinamakan Bakau Minyak? Haa, tengok daunnya berkilat macam disapu minyak dan akarnya berbentuk jangkang! Boleh imbas Pokok Bakau Minyak sebenar di Taman Negara Tanjung Piai ATAU guna Pokok Pop-Up 3D pada brosur cetak!"
           </p>
           <div class="bg-white p-2 rounded-xl border border-slate-200 text-center">
-            <!-- GAMBAR PENUH TANPA TERPOTONG -->
             <img src="misi1-bakau-minyak.jpg" alt="Rajah Misi 1" class="w-full max-h-[480px] object-contain rounded-lg bg-slate-900/5 p-1" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x500?text=Rajah+Misi+1+Bakau+Minyak';">
             <span class="text-[10px] text-slate-400 mt-1.5 block font-medium">Rajah Misi 1: Pokok Bakau Minyak &amp; AR Cikong</span>
           </div>
         </div>
 
-       <!-- MISI 2 -->
+        <!-- MISI 2 -->
         <div class="space-y-2.5 bg-slate-50 p-4 rounded-xl border border-slate-100">
           <div class="flex items-center gap-2.5">
             <img src="icon-poi-belacak.png" alt="Icon Misi 2" class="w-10 h-10 sm:w-12 sm:h-12 object-contain rounded-xl bg-emerald-100 p-1 shrink-0 shadow-sm" onerror="this.onerror=null; this.src='https://via.placeholder.com/48?text=M2';">
@@ -343,7 +366,11 @@
             <span class="text-[10px] text-slate-400 mt-1.5 block font-medium">Rajah Misi 6: Tugu Glob Tanjung Piai</span>
           </div>
         </div>
- <!-- MANUAL PANDUAN POKOK POP-UP 3D (INLINE CONTENT WITH IMAGES) -->
+
+      </div>
+    </div>
+
+    <!-- MANUAL PANDUAN POKOK POP-UP 3D (INLINE CONTENT WITH IMAGES) -->
     <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm space-y-5">
       <h2 class="text-base font-bold text-slate-800 flex items-center gap-2 border-b border-slate-100 pb-3">
         <i class="fa-solid fa-book-open text-emerald-600"></i> Panduan Pokok Pop-Up 3D
@@ -369,7 +396,7 @@
           </a>
         </div>
         
-        <!-- STEP IMAGES GRID (PAPARAN GAMBAR PENUH TANPA TERPOTONG) -->
+        <!-- STEP IMAGES GRID -->
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1">
           <!-- STEP 1 -->
           <div class="bg-slate-50 p-2 rounded-xl border border-slate-100 text-center space-y-1.5 flex flex-col justify-between">
@@ -432,7 +459,7 @@
             </ol>
           </div>
 
-          <!-- GAMBAR PAPARAN AR (PENUH TANPA TERPOTONG) -->
+          <!-- GAMBAR PAPARAN AR -->
           <div class="bg-slate-50 p-2 rounded-xl border border-slate-100 text-center space-y-1">
             <div class="w-full h-64 bg-slate-900/5 rounded-lg overflow-hidden p-1 flex items-center justify-center">
               <img src="manual-step5-paparan-ar.jpg" alt="Paparan AR Misi 1" class="w-full h-full object-contain rounded" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x350?text=Paparan+AR';">
@@ -441,8 +468,9 @@
           </div>
         </div>
       </div>
-    </div>    
-<!-- BAHAN CETAK PDF SECTION -->
+    </div>
+
+    <!-- BAHAN CETAK PDF SECTION -->
     <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm space-y-3">
       <h2 class="text-base font-bold text-slate-800 flex items-center gap-2">
         <i class="fa-solid fa-file-pdf text-emerald-600"></i> Bahan Cetak (PDF)
@@ -454,7 +482,6 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
         <!-- BROSUR LIPAT 2 -->
         <a href="brosur-kembarapiai.pdf" download class="p-3.5 bg-slate-50 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-300 rounded-xl text-center transition block group">
-          <!-- IKON BROSUR LIPAT 2 (BI-FOLD) -->
           <i class="fa-solid fa-book-open text-2xl text-emerald-600 group-hover:scale-110 transition-transform mb-1.5 block"></i>
           <span class="text-xs font-bold text-slate-800 block">Brosur Lipat 2 Peta</span>
           <span class="text-[10px] text-slate-400">brosur-kembarapiai.pdf</span>
@@ -462,13 +489,13 @@
 
         <!-- TEMPLATE POKOK PAYA BAKAU 3D -->
         <a href="pokok-popup-bakau.pdf" download class="p-3.5 bg-slate-50 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-300 rounded-xl text-center transition block group">
-          <!-- IKON PAYA BAKAU (GUNA GAMBAR IKON BAKAU MINYAK ASAL) -->
           <img src="icon-poi-bakau-minyak.png" alt="Ikon Paya Bakau" class="w-7 h-7 mx-auto group-hover:scale-110 transition-transform mb-1.5 object-contain" onerror="this.onerror=null; this.src='https://via.placeholder.com/30?text=Bakau';">
           <span class="text-xs font-bold text-slate-800 block">Template Pokok Pop-Up 3D</span>
           <span class="text-[10px] text-slate-400">pokok-popup-bakau.pdf</span>
         </a>
       </div>
     </div>
+
     <!-- BORANG KAJI SELIDIK SECTION -->
     <div id="survey" class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm space-y-3">
       <h2 class="text-base font-bold text-slate-800 flex items-center gap-2">
@@ -514,7 +541,8 @@
       <p class="text-[10px] text-slate-400 pt-1">&copy; 2026 KembARaPiai. Hak Cipta Terpelihara.</p>
     </div>
   </footer>
-<!-- SKRIP UNTUK SOKONGAN LERETAN TETIKUS & BUTANG -->
+
+  <!-- SKRIP UNTUK SOKONGAN LERETAN TETIKUS & BUTANG -->
   <script>
     const carousel = document.getElementById('mediaCarousel');
 
@@ -531,7 +559,5 @@
       }
     }, { passive: false });
   </script>
-</body>
-
 </body>
 </html>
